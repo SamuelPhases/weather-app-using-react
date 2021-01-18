@@ -1,0 +1,86 @@
+.display {
+  background-color: #1e3b55;
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.display > h3 {
+  /* color: #fff; */
+  font-size: 1.2rem;
+  font-weight: 500;
+  flex: 0.1;
+  /* background-color: dodgerblue; */
+  display: flex;
+  align-items: center;
+}
+
+.display > h3 > span {
+  color: #ccc;
+  padding-left: 0.2em;
+}
+
+.display > .details {
+  /* background-color: darkviolet; */
+  flex: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5em 0em;
+}
+
+.display > .details .icon {
+  width: 12rem;
+  height: 12rem;
+  background-color: darkslategrey;
+}
+
+.display > .details > h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  /* line-height: 0; */
+}
+
+.display > .details > h2 > sup {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.display > .details > .time {
+  font-size: 1.5rem;
+  /* line-height: 0; */
+  color: #ccc;
+}
+
+.display > .details > .cond {
+  /* width: 100%; */
+}
+.display > .details > .cond > div {
+  background-color: #00008b50;
+  padding: 1em;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+}
+.display > .details > .cond > div > p {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.display > .details > .place {
+  width: 70%;
+  height: 5rem;
+  background-color: #00000010;
+  border-radius: 5px;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display > .details > .place > h3 {
+  font-weight: 500;
+  transform: scale(1.05);
+}

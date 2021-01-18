@@ -1,0 +1,174 @@
+.day {
+  height: 100vh;
+  background: url("https://mars-jpl-nasa-gov.s3.amazonaws.com/src/insight/insight_weather_bg.jpg");
+  object-fit: cover;
+  /* background-position: top center; */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.day::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+}
+
+.banner {
+  flex: 0.7;
+  /* background-color: orangered; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.banner > .pane-details {
+  /* background-color: navy; */
+  flex: 0.55;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.banner > .pane-details > .name {
+  /* background-color: midnightblue; */
+  flex: 0.35;
+  color: #fff;
+  /* padding: 3em 0em; */
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.banner > .pane-details > .name > h1 {
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.banner > .pane-details > .name > h3 {
+  /* padding: 0em 3em; */
+  padding-left: 2em;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ccc;
+}
+
+.banner > .pane-details > .name > h1 {
+}
+
+.banner > .pane-details > .temp {
+  flex: 0.35;
+  /* background-color: lightyellow; */
+  position: relative;
+  color: #fff;
+}
+
+.banner > .pane-details > .temp > h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  padding: 0.5em;
+}
+
+.banner > .pane-details > .temp > div {
+  padding-left: 1.8em;
+}
+
+.banner > .pane-details > .temp > div > h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.banner > .pane-details > .temp > div > h4 > span {
+  font-weight: 400;
+  color: #ccc;
+}
+
+.banner > .pane-details > .temp > .low {
+  padding-bottom: 0.4em;
+}
+
+.banner > .pane-details > .temp::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 90%;
+  top: 5%;
+  left: 0;
+  background-color: dodgerblue;
+}
+.banner > .pane-details > .temp::after {
+  position: absolute;
+  background-color: dodgerblue;
+  content: "";
+  width: 5px;
+  height: 90%;
+  top: 5%;
+  right: 0;
+}
+
+.banner > .pane-details > .wind {
+  flex: 0.3;
+  /* background-color: gold; */
+  color: #fff;
+}
+.banner > .pane-details > .wind > div {
+  padding-left: 1.8em;
+  padding-bottom: 1em;
+}
+.banner > .pane-details > .wind > div > h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* line-height: 1.2; */
+}
+
+.banner > .pane-details > .wind > div > h4 > span {
+  font-weight: 400;
+  color: #ccc;
+  text-transform: capitalize;
+}
+.banner > .pane-details > .wind h2 {
+  font-size: 2.8rem;
+  padding: 0.5em;
+  font-weight: 500;
+}
+
+.banner > .pane-info {
+  flex: 0.45;
+  color: #fff;
+}
+
+.banner > .pane-info > h3 {
+  padding: 0.5em;
+  /* padding-bottom: 0.5em; */
+  padding-left: 1.2em;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.banner > .pane-info > p {
+  padding-left: 2.5em;
+  font-size: 1.2rem;
+  width: 70%;
+  color: #ccc;
+}
+
+.row {
+  width: 100%;
+  flex: 0.3;
+  /* background-color: orange; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5em;
+  padding: 0em 0.5em;
+  z-index: 2;
+}

@@ -1,0 +1,190 @@
+.locale {
+  height: 100vh;
+  /* background-color: mediumspringgreen; */
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+}
+
+.side {
+  flex: 0.75;
+  /* background-color: #073c55; */
+  display: flex;
+  flex-direction: column;
+  background-color: #152c4e;
+}
+
+.side-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: darkgreen; */
+  padding: 0.5em;
+  flex: 0.07;
+}
+
+.side-header > form {
+  flex: 0.7;
+  /* background-color: darkmagenta; */
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.side-header > form > input {
+  flex: 0.9;
+  padding: 0.5em;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff90;
+  outline: none;
+  color: #fff;
+}
+
+.side-header > form > button {
+  padding: 0.5em 0.5em;
+  border: none;
+  font-size: 0.95rem;
+  border: 1px solid #199;
+  background-color: transparent;
+  flex: 0.1;
+  border-radius: 3px;
+  text-transform: capitalize;
+  font-weight: 300;
+  cursor: pointer;
+  color: #fff;
+}
+
+.side-header > .deg {
+  flex: 0.1;
+  /* background-color: darkorange; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.side-header > .deg > div {
+  width: 2.2rem;
+  height: 2.2rem;
+  /* background-color: #299; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.1),
+    inset -2px -2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.side-header > .deg > div:nth-child(2) {
+  box-shadow: inset 5px 5px 5px 0px rgba(255, 255, 255, 0.1),
+    inset -2px -2px 5px 0px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+.side-header > .deg > div > h5 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.side-header > .toggle {
+  flex: 0.1;
+  /* background-color: darkred; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.side-header > .toggle > input {
+  opacity: 0;
+}
+
+.side-header > .toggle > label {
+  position: relative;
+  cursor: pointer;
+}
+.side-header > .toggle > label::before {
+  position: absolute;
+  content: "";
+  top: 13%;
+  left: -29%;
+  width: 1rem;
+  height: 1rem;
+  background-color: gold;
+  border-radius: 50%;
+}
+
+.side > .weather-details {
+  /* background-color: darkred; */
+  flex: 0.93;
+  z-index: 1;
+  position: relative;
+}
+
+.side > .weather-details > h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  width: 95%;
+  /* background-color: darkolivegreen; */
+  margin: auto;
+  padding: 1em 0em;
+}
+
+.side > .weather-details > .grid-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  width: 95%;
+  margin: 1em auto;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  /* background-color: #019; */
+  /* position: absolute; */
+  padding: 1em 0.5em;
+}
+
+.side > .weather-details > .grid-details > div {
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 170px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em 0.5em;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-clip: padding-box;
+}
+
+.side > .weather-details > .grid-details > div > h4 {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+.side > .weather-details > .grid-details > div > p {
+  /* text-transform: capitalize; */
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.side > .weather-details > .grid-details > div > h5 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.side > .weather-details > .grid-details > div > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.side > .weather-details > .grid-details > div > div > div > h4 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.side > .weather-details > .grid-details > div > div > div > h4 > span {
+  text-transform: uppercase;
+}

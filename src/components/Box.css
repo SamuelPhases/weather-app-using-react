@@ -1,0 +1,51 @@
+.box {
+  background-color: #00000070;
+  border: 1px solid #eee;
+  /* width: 150px; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  height: 95%;
+}
+
+.box > .id {
+  color: #fff;
+}
+.box > .id > h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.box > .id > h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.box > .temp {
+  color: #ccc;
+}
+
+.box > .temp > h4 {
+  font-weight: 500;
+}
+
+.box > .temp > h4 > span {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.box > button {
+  padding: 0.5em 1.2em;
+  text-transform: capitalize;
+  background: #019ccc;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
